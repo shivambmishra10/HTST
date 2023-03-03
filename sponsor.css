@@ -32,7 +32,9 @@
     width: 80vw;
     margin: 8vh 10vw;
     text-align: center;
-    background: linear-gradient(89deg, rgba(97, 25, 241, 0.37) 0.00%, rgba(165, 16, 185, 0.473) 100.00%);
+    
+    background: linear-gradient(292deg, rgb(241 130 25 / 39%) 0.00%, rgba(165, 16, 185, 0.473) 100.00%);
+
     border-radius: 15px;
   }
 
