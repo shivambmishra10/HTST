@@ -11,6 +11,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="icon" href="images/LOG.png" type="image/icon type">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
     <!--    font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -70,7 +73,7 @@
     <div class="landing-page">
         <div class="heading">
             <div>
-                <<span class="title">HACK THE TANK/</span>>
+                <<span class="title" style="font-family: 'Gorditas', cursive;">HACK THE TANK/</span>>
                     <button class="date">25-26 March'2023</button>
                     <button class="pan">offline PAN India</button>
             </div>
@@ -81,11 +84,19 @@
         </div>
         <!-- <div class="primary-btn"> -->
            
-                <div class="done">
-                    <button onclick="window.location.href='https://hack-the-tank.devfolio.co/'">
+                <div class="primary-btn">
+                    <!-- <button onclick="window.location.href='https://hack-the-tank.devfolio.co/'">
                 <img src="https://static.wixstatic.com/media/745f0e_90e13ebca3ed49fe9915097cb7cdb98e~mv2.png/v1/fill/w_342,h_50,al_c,q_95,usm_0.66_1.00_0.01,enc_auto/image.png" alt="image.png" srcset="https://static.wixstatic.com/media/745f0e_90e13ebca3ed49fe9915097cb7cdb98e~mv2.png/v1/fill/w_342,h_50,al_c,q_95,usm_0.66_1.00_0.01,enc_auto/image.png 1x, https://static.wixstatic.com/media/745f0e_90e13ebca3ed49fe9915097cb7cdb98e~mv2.png/v1/fill/w_684,h_100,al_c,lg_1,q_95,enc_auto/image.png 2x" fetchpriority="high">
-            </button>
+            </button> -->
+            <div 
+	class="apply-button" 
+	data-hackathon-slug="YOUR-HACKATHON-SLUG" 
+	data-button-theme="light"
+	style="height: 44px; width: 312px"
+></div>
+
                 </div>
+
           
             <!-- <button class="join" onclick="window.location.href='https://devfolio.co/discover';">Join Discord Community</button> -->
         <!-- </div> -->
@@ -100,10 +111,8 @@
 
 
         <!-- about section -->
-        <div class="about-event" id="about">
-            <h2>
-                <<span>About</span>/>
-            </h2>
+        <div class="about-event">
+            <center><h2 style="font-size: 3.5rem;color: yellow;"><<span>About</span>/></h2></center>
             <div class="d-flex flex-wrap justify-content-around">
                 <div class="left d-flex flex-column align-items-around justify-content-around">
                     <p class="cnt">
@@ -416,6 +425,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="freq_java.js"></script>
+    <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
 </body>
 
 </html>

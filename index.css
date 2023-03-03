@@ -15,6 +15,7 @@
     padding: 0;
     box-sizing: border-box;
     background-color: var(--background);
+    
   }
   body {
     margin: 0;
@@ -374,6 +375,13 @@
       height: 28px;
       object-fit:cover;
     }
+    .ct1 h1
+{
+    color: #ffd60a;
+    font-size: 0.1rem;
+    margin-left: 100px;
+
+}
 }
 
 .cnt
@@ -408,4 +416,12 @@ h2
 
 font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
   monospace;
+}
+
+.ct1 h1
+{
+    color: #ffd60a;
+    font-size: 4.5rem;
+    margin-left: 750px;
+
 }
