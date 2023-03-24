@@ -9,8 +9,8 @@ body {
     text-align: center;
 }
 #tank {
-    width: 2500px;
-    height: 1200px;
+    width: 1800px;
+    height: 800px;
     background-image: url('https://lh3.googleusercontent.com/ojpj_R2VlSVoQevkLMI00BphVNT76uedReyyFOTyYmfr-2Pu9kcCtU1TxH2XKYN-pfX--Ga00GY=w1440-ns-nd-rj');
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,8 +34,8 @@ body {
 
 /* CSS for the shark */
 .shark {
-    width: 450px;
-    height: 200px;
+    width: 300px;
+    height: 150px;
     background-image: url('images/sharkhehe.png');
     background-repeat: no-repeat;
     background-size: contain;
