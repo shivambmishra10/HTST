@@ -83,3 +83,25 @@ body {
         transform: translateY(0);
     }
 }
+
+#flyer {
+    position: absolute;
+    top: 20px;
+    right: 5px;
+    padding: 10px;
+    background-color: #FFC107;
+    color: rgb(0, 71, 138);
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  #flyer:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -20px;
+    border-top: 20px solid transparent;
+    border-right: 20px solid #FFC107;
+    border-bottom: 20px solid transparent;
+  }
+  
