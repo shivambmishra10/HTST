@@ -1,0 +1,85 @@
+body {
+    background-color: #041a30;
+}
+
+#htt{
+    font-size: 70px;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+#tank {
+    width: 2500px;
+    height: 1200px;
+    background-image: url('https://lh3.googleusercontent.com/ojpj_R2VlSVoQevkLMI00BphVNT76uedReyyFOTyYmfr-2Pu9kcCtU1TxH2XKYN-pfX--Ga00GY=w1440-ns-nd-rj');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid #333;
+    border-radius: 5px;
+    position: relative;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+#water {
+    width: 100%;
+    height: 80%;
+    background-color: #006dc6;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    animation: wave 2s ease-in-out infinite;
+}
+
+/* CSS for the shark */
+.shark {
+    width: 450px;
+    height: 200px;
+    background-image: url('images/sharkhehe.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: swim 10s linear infinite;
+}
+
+@keyframes swim {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* CSS for the text */
+#text {
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: yellow;
+    text-shadow: 1px 1px 1px #000;
+}
+
+/* CSS for the wave animation */
+@keyframes wave {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

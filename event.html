@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="event.css">
+</head>
+
+<body>
+    <h1 id="htt">Hack The Tank</h1>
+    <div id="tank">
+        <div id="water"></div>
+        <div class="shark" style="top: 20%; left: 50%;"></div>
+        <div class="shark" style="top: 70%; left: 20%;"></div>
+        <div class="shark" style="top: 30%; left: 70%;"></div>
+        <div class="shark" style="top: 80%; left: 80%;"></div>
+        <div class="shark" style="top: 30%; left: 20%;"></div>
+        <div class="shark" style="top: 80%; left: 50%;"></div>
+        &nbsp;<div id="text"></div>&nbsp;
+    </div>
+</body>
+<script>
+    // Get the "Timer Yaha" element
+    const timer = document.getElementById('text');
+
+    // Set the event schedule
+    const schedule = [
+        { time: '08:00 AM', text: 'Hackathon Yet to begin' },
+        { time: '09:30 AM', text: 'Opening Ceremony' },
+        { time: '11:00 AM', text: 'Problem Statement Releasing' },
+        { time: '12:00 PM', text: 'Hacking Starts' },
+    ];
+
+    // Update the schedule every minute
+    const x = setInterval(function () {
+
+        // Get the current time
+        const now = new Date().getTime();
+
+        // Find the schedule item that matches the current time
+        const item = schedule.find(i => {
+            const itemTime = new Date(`2023-03-25 ${i.time}`).getTime(); // Change this date to the date of the event
+            return itemTime > now;
+        });
+
+        // If no schedule item matches the current time, display the last item in the schedule
+        const currentItem = item || schedule[schedule.length - 1];
+
+        // Update the "Timer Yaha" element with the current schedule item text
+        timer.innerHTML = currentItem.text;
+
+        // If the event has ended, stop the schedule update
+        if (currentItem.text === 'Hacking Starts') {
+            const countDownDate = new Date("2023-03-26 12:00:00").getTime();
+            const now = new Date().getTime();
+            const distance = countDownDate - now;
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            timer.innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+        }
+    }, 500);
+
+
+</script>
+
+</html>
